@@ -16,9 +16,6 @@ BONUS 2 (solo se non sei giá fuso):
 organizzare i singoli membri in card/schede
 */
 
-
-
-
 const team = [
     {
         name: 'Wayne Barnett',
