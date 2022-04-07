@@ -1,5 +1,7 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgba(245, 245, 241, 1);
+    color: rgba(109, 103, 96, 1);
+    font-family: 'Montaga',serif;
 }
 
 .container_cards{

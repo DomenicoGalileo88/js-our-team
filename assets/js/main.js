@@ -73,6 +73,10 @@ for (let i = 0; i < team.length; i++) {
     /* BONUS 1
 
 trasformare la stringa foto in una immagine effettiva */
+
+/* BONUS 2
+
+organizzare i singoli membri in card/schede */
     let div = document.querySelector('.row');
 
     let card = `
