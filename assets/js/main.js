@@ -49,14 +49,25 @@ const team = [
     },
 ];
 
+/* MILESTONE 1
+
+stampare su console le informazioni di nome, ruolo e la stringa della foto */
+
+//creo un ciclo for che itera fino a quando la i non raggiunge la lunghezza dell'array team
 for (let i = 0; i < team.length; i++) {
+    //conservo ogni singolo membro in una variabile
     const member = team[i];
-    
-    console.log('Member:');
+    //stampo in console i valori di ogni membro
+    /* console.log('Member:');
     console.log('');
     console.log(member['name']);
     console.log(member.role);
     console.log(member.image);
-    console.log('');
-    
-}
+    console.log(''); */
+    console.log(member);
+    document.querySelector('.members_data').innerHTML += `Nome: ${member.name}  Ruolo: ${member.role}  Img: ${member.image} <br>`;
+};
+
+/* MILESTONE 2 
+
+stampare le stesse informazioni su DOM sottoforma di stringhe */
