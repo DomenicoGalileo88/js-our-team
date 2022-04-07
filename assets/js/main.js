@@ -1,18 +1,17 @@
 /* 
 Viene fornito un file js in cui è definito un array di oggetti che rappresentano i membri del team.
-
 Ogni membro ha le informazioni necessarie per stampare le relative informazioni: Nome, Ruolo e Foto.
 
-MILESTONE 1 (da fare entro le 18):
+MILESTONE 1
 stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-MILESTONE 2 (se ce la fai falla entro le 18 altrimenti puoi consegnare anche dopo le 18 - easy):
+MILESTONE 2
 stampare le stesse informazioni su DOM sottoforma di stringhe
 
-BONUS 1 (solo se non sei giá frustrato dalle milestone 1 e 2):
+BONUS 1
 trasformare la stringa foto in una immagine effettiva
 
-BONUS 2 (solo se non sei giá fuso):
+BONUS 2
 organizzare i singoli membri in card/schede
 */
 
@@ -51,9 +50,9 @@ const team = [
 
 /* MILESTONE 1
 
-stampare su console le informazioni di nome, ruolo e la stringa della foto */
+Stampare su console le informazioni di nome, ruolo e la stringa della foto */
 
-//creo un ciclo for che itera fino a quando la i non raggiunge la lunghezza dell'array team
+//Creo un ciclo for che itera fino a quando la i non raggiunge la lunghezza dell'array team
 for (let i = 0; i < team.length; i++) {
     //conservo ogni singolo membro in una variabile
     const member = team[i];
@@ -64,29 +63,30 @@ for (let i = 0; i < team.length; i++) {
     console.log(member.role);
     console.log(member.image);
     console.log(''); */
-    console.log(member);
+    //console.log(member);
 
-    /* MILESTONE 2
+/* MILESTONE 2
     
-    stampare le stesse informazioni su DOM sottoforma di stringhe */
+stampare le stesse informazioni su DOM sottoforma di stringhe */
 
     /* BONUS 1
 
-trasformare la stringa foto in una immagine effettiva */
+    Trasformare la stringa foto in una immagine effettiva */
 
-/* BONUS 2
+    /* BONUS 2
 
-organizzare i singoli membri in card/schede */
+    Organizzare i singoli membri in card/schede */
+
+    //Richiamo attraverso il querySelector il mio elemento nella dom al quale voglio assegnare le mie card
     let div = document.querySelector('.row');
-
-    let card = `
-                    <div class="card p-0 m-1 mb-3">
-                        <img src="./assets/img/${member.image}" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                        <h5 class="card-title">${member.name}</h5>
-                        <p class="card-text">${member.role}</p>
-                    </div>
-                `;
+    //Assegno ad una variabile il mio codice html da inserire
+    let card = `<div class="card p-0 m-1 mb-3">
+                    <img src="./assets/img/${member.image}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">${member.name}</h5>
+                    <p class="card-text">${member.role}</p>
+                </div>`;
+    // Inserisco il codice assegnato nella variabile card dentro l'elemento della dom richiamato 
     div.insertAdjacentHTML('beforeend', card);
 };
 
