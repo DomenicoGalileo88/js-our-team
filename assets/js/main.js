@@ -75,11 +75,14 @@ for (let i = 0; i < team.length; i++) {
 trasformare la stringa foto in una immagine effettiva */
     let div = document.querySelector('.row');
 
-    let card = `<div class="col-4">
-                    <img src='./assets/img/${member.image}' alt="">
-                    <h5 class="title_img">${member.name}</h5>
-                    <p class="text_img">${member.role}</p>
-                </div>`;
+    let card = `
+                    <div class="card p-0 m-1 mb-3">
+                        <img src="./assets/img/${member.image}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">${member.name}</h5>
+                        <p class="card-text">${member.role}</p>
+                    </div>
+                `;
     div.insertAdjacentHTML('beforeend', card);
 };
 
