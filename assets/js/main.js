@@ -89,7 +89,3 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
     // Inserisco il codice assegnato nella variabile card dentro l'elemento della dom richiamato 
     div.insertAdjacentHTML('beforeend', card);
 };
-
-
-
-
