@@ -4,11 +4,43 @@ body{
     font-family: 'Montaga',serif;
 }
 
+.fs_15{
+    font-size: 15px;
+}
+
 .container_cards{
     width: 60%;
-    margin: 3rem auto;
+    margin: 2rem auto;
+}
+
+.container_form{
+    width: 30%;
+    margin: 0 auto;
 }
 
 .card{
     width: calc(100% / 3 - 1rem);
+}
+
+.form_data{
+    padding: 2rem;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+input{
+    border-radius: 0.5rem;
+}
+
+.alert_confirmed{
+    color: rgb(116, 189, 116);
+    background-color: rgb(200, 250, 200);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
 }
