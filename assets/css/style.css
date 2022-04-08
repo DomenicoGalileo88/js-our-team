@@ -20,6 +20,13 @@ body{
 
 .card{
     width: calc(100% / 3 - 1rem);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    color: coral;
 }
 
 .form_data{
@@ -43,4 +50,13 @@ input{
     margin-bottom: 1rem;
     text-align: center;
     display: none;
+}
+
+.submit{
+    transition: all 0.5s;
+}
+
+.submit:hover{
+    background-color: palegreen;
+    color: rgb(58, 141, 58);
 }
